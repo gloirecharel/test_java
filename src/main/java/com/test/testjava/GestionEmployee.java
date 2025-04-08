@@ -4,7 +4,7 @@ package com.test.testjava;
 import java.util.List;
 
 // Exercice 1 : Gestion des Employés 
-public class Employee {
+public class GestionEmployee {
     
     protected String name ;
     protected String position ;
