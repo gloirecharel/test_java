@@ -1,5 +1,7 @@
 package com.test.testjava;
 
+import java.util.List;
+
 import org.bson.Document;
 import org.bson.conversions.Bson;
 
@@ -10,11 +12,10 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.Updates;
-import java.util.List;
 
 public class MongoDdOperation {
 
-    
+    //Exercice 3 : Connexion et Insertion 
 
     private static final String URI = "mongodb+srv://gloire:1234@cluster0.5jygq0j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
     private static MongoDatabase database;
@@ -57,6 +58,9 @@ public class MongoDdOperation {
     }
 }
 
+
+
+// Exercice 4 : Opérations CRUD 
 
     
     public static void rechercheParPosition(String position) {

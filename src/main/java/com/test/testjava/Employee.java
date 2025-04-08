@@ -2,6 +2,8 @@
 package com.test.testjava;
 
 import java.util.List;
+
+// Exercice 1 : Gestion des Employés 
 public class Employee {
     
     protected String name ;
@@ -14,6 +16,10 @@ public class Employee {
         this.position = position ;
         this.salary = salary ;   
     }
+
+
+
+    // Exercice 2 : Calcul des Primes
     
     public static List<Employee> listeEmployeeSalaireDecroi(List<Employee> employes){
         
