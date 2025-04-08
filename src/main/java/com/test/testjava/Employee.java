@@ -19,7 +19,7 @@ public class Employee {
 
 
 
-    // Exercice 2 : Calcul des Primes
+   
     
     public static List<Employee> listeEmployeeSalaireDecroi(List<Employee> employes){
         
@@ -28,7 +28,8 @@ public class Employee {
        return employes ;
              
     }
-    
+
+     // Exercice 2 : Calcul des Primes
     
     public double CalculePrimeAnnuel(){
             double prime ;
