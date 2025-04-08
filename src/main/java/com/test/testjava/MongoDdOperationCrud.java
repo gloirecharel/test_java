@@ -13,7 +13,7 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.Updates;
 
-public class MongoDdOperation {
+public class MongoDdOperationCrud {
 
     //Exercice 3 : Connexion et Insertion 
 
