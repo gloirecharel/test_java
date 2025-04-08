@@ -66,10 +66,10 @@ public class MongoDdOperationCrud {
     public static void rechercheParPosition(String position) {
         MongoCollection<Document> collection = database.getCollection("employees");
         Bson filter = Filters.eq("position", position);
-        FindIterable<Document> results = collection.find(filter);
+        FindIterable<Document> resultats = collection.find(filter);
     
         boolean trouver = false;
-        for (Document doc : results) {
+        for (Document doc : resultats) {
             System.out.println("Employé trouvé : " + doc.toJson());
             trouver = true; 
         }
@@ -81,15 +81,15 @@ public class MongoDdOperationCrud {
     
 
   
-    public static void mettreAjoutSalaire(String name, double newSalary) {
+    public static void mettreAjoutSalaire(String name, double nouveauSalaire) {
         MongoCollection<Document> collection = database.getCollection("employees");
 
         Bson filter = Filters.eq("name", name);
         Document employee = collection.find(filter).first();
 
         if (employee != null) {
-            collection.updateOne(filter, Updates.set("salary", newSalary));
-            System.out.println("Salaire mis à jour pour " + name + " à " + newSalary);
+            collection.updateOne(filter, Updates.set("salary", nouveauSalaire));
+            System.out.println("Salaire mis à jour pour " + name + " à " + nouveauSalaire);
         } else {
             System.out.println("Aucun employé trouvé avec le nom : " + name);
         }
